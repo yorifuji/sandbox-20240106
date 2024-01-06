@@ -15,3 +15,5 @@ jobs:
         with:
           script: |
             console.log(context)
+            console.log(context.payload.pull_request.base)
+            console.log(context.payload.pull_request.head)
